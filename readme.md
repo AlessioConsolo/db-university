@@ -32,7 +32,9 @@ Query con SELECT
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-Bonus.
+   SELECT \* FROM `teachers` WHERE `phone` IS NOT NULL;
+
+Bonus:
 
 9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo
    degree_id, inserire un valore casuale)
