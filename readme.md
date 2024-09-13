@@ -97,6 +97,12 @@ Query con JOIN -----------------------------------------------------------------
 
 2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze
 
+   SELECT departments.name AS "Dipartimento", degrees.name AS "Corso di Laurea", degrees.level AS "Livello"
+   FROM degrees
+   JOIN departments ON departments.id LIKE 7 = degrees.department_id
+   WHERE degrees.level = "magistrale"
+   AND departments.id = 7;
+
 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 
 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
