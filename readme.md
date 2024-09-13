@@ -75,6 +75,10 @@ Query con GROUP BY -------------------------------------------------------------
 
 3. Calcolare la media dei voti di ogni appello d'esame
 
+   SELECT `student_id`, AVG(`vote`) AS "Media Voti"
+   FROM `exam_student`
+   GROUP BY `student_id`
+
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
 Query con JOIN ----------------------------------------------------------------------------
